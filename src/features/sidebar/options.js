@@ -1,5 +1,3 @@
-import Algorithms from "../../components/Algorithms"
-
 const options = {
     games: [
         {
