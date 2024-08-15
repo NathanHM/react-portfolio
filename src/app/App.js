@@ -13,7 +13,9 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
         <Route path="games" element={<Games />} />
         <Route path="games/:game" element={<Games />} />
         <Route path="algorithms" element={<Algorithms />} />
+        <Route path="algorithms/:algorithm" element={<Algorithms />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/:project" element={<Projects />} />
     </Route>
 ))
 

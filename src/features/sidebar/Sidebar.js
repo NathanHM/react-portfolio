@@ -1,5 +1,5 @@
 import options from "./options";
-import styles from './sidebar.css';
+import styles from './Sidebar.module.css';
 import Bar from "./Bar";
 import { v4 as uuidv4 } from "uuid";
 

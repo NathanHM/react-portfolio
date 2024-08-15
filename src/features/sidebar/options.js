@@ -1,3 +1,5 @@
+import Algorithms from "../../components/Algorithms"
+
 const options = {
     games: [
         {
@@ -8,6 +10,28 @@ const options = {
             name: 'Chess',
             path: 'chess'
         }
+    ],
+    algorithms: [
+        {
+            name: 'Breadth First Search',
+            path: 'bfs'
+        },
+        {
+            name: 'Depth First Search',
+            path: 'dfs'
+        }
+
+    ],
+    projects: [
+        {
+            name: 'Reddit Client',
+            path: 'reddit-client'
+        },
+        {
+            name: 'Behavioural Based Reeinforcement Learning',
+            path: 'bbrl'
+        }
+
     ]
 }
 

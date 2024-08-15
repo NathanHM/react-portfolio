@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import styles from './sidebar.css';
+import styles from './Sidebar.module.css';
 
 export default function Bar({ name, path, page }) {
 

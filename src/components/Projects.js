@@ -1,3 +1,7 @@
+import Sidebar from "../features/sidebar/Sidebar";
+
 export default function Projects() {
-    return
+    return(
+        <Sidebar page='projects' />
+    )
 }
