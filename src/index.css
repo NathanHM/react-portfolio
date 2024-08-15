@@ -1,13 +1,197 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Imports */
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("./fonts/Inconsolata-Regular.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("./fonts/SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+/* Text Rules */
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-size: 7rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 5rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 4.75rem;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #855dce;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+.montserrat{
+    font-family: "Montserrat";
+}
+
+.arial {
+    font-family: Arial;
+}
+
+.source-code-pro {
+    font-family: "Source Code Pro";
+}
+
+.inconsolata{
+    font-family: "Inconsolata";
+}
+
+
+/* Header */
+
+header {
+    background-color:#383838;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inconsolata';
+    height: 50px;
+    align-items: center;
+}
+
+header nav {
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+/* Content */
+
+body {
+    background-color: #262626;
+    display: block;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    background-image: url("./imgs/backPattern.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.banner-content {
+    line-height: 5rem;
+}
+
+.content-case{
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 30px 10%;
+    max-width: 1000px;
+    display: block;
+}
+
+.container {
+    border: 2px solid grey;
+    margin: 15px 0px;
+    padding: 25px;
+    background-color: #262626;
+}
+
+/* Footer */
+
+footer {
+    background-color: #383838;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    border-top: solid 2px grey;
+    margin: 0px;
+    justify-content: space-between;
+    transition: 0.1s;
+}
+
+.footer-name {
+    display: flex;
+    align-self: last baseline;
+}
+
+.footer-year {
+    display: flex;
+    align-self: last baseline;
+}
+
+.footer-year p {
+    padding-left: 152px;
+}
+
+footer p {
+    font-family: "Inconsolata", Arial, serif;
+    display: inline;
+    margin-bottom: 0px;
 }
