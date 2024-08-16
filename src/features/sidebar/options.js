@@ -28,6 +28,10 @@ const options = {
         {
             name: 'Behavioural Based Reeinforcement Learning',
             path: 'bbrl'
+        },
+        {
+            name: 'VR Memory Room',
+            path: 'viarama'
         }
 
     ]

@@ -34,18 +34,17 @@ h2 {
 }
 
 h3 {
-    font-size: 4.75rem;
+    font-size: 3rem;
     text-decoration: underline;
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.25rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
 }
 
 a {
@@ -73,6 +72,7 @@ a:active {
 
 .source-code-pro {
     font-family: "Source Code Pro";
+    letter-spacing: 1px;
 }
 
 .inconsolata{
