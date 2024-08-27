@@ -2,20 +2,25 @@ import { createRoutesFromElements, createBrowserRouter, Route, RouterProvider } 
 import Root from "./Root";
 import Home from "../components/Home";
 import Contact from "../components/Contact";
-import Games from "../components/Games";
+import Games from "../components/games/Games";
 import Algorithms from "../components/Algorithms";
 import Projects from "../components/projects/Projects";
 import RedditClient from "../components/projects/RedditClient";
 import Mario from "../components/projects/Mario";
+import TicTacToe from "../components/games/ticTacToe/TicTacToe";
+import Chess from "../components/games/Chess";
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root />}>
         <Route path="home" element={<Home />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="games" element={<Games />} />
-        <Route path="games/:game" element={<Games />} />
+        <Route path="games" element={<Games />}>
+            <Route path="tic-tac-toe" element={<TicTacToe />} />
+            <Route path="chess" element={<Chess />} />
+        </Route>
         <Route path="algorithms" element={<Algorithms />} />
-        <Route path="algorithms/:algorithm" element={<Algorithms />} />
+        <Route path="algorithms/:algorithm" element={<Algorithms />}>
+        </Route>
         <Route path="projects" element={<Projects />} >
             <Route path="reddit-client" element={<RedditClient />} />
             <Route path="bbrl" element={<Mario />} />

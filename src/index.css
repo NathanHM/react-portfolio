@@ -164,6 +164,11 @@ body {
     min-width: 50rem;
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Footer */
 
 footer {
