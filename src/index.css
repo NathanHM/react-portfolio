@@ -169,6 +169,10 @@ body {
     justify-content: space-between;
 }
 
+.icon {
+    filter: invert(100%);
+}
+
 /* Footer */
 
 footer {

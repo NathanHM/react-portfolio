@@ -9,12 +9,14 @@ import RedditClient from "../components/projects/RedditClient";
 import Mario from "../components/projects/Mario";
 import TicTacToe from "../components/games/ticTacToe/TicTacToe";
 import Chess from "../components/games/Chess";
+import { Navigate } from "react-router-dom";
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root />}>
         <Route path="home" element={<Home />} />
         <Route path="contact" element={<Contact />} />
         <Route path="games" element={<Games />}>
+            <Route index element={<Navigate to="tic-tac-toe" />} />
             <Route path="tic-tac-toe" element={<TicTacToe />} />
             <Route path="chess" element={<Chess />} />
         </Route>
@@ -22,6 +24,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
         <Route path="algorithms/:algorithm" element={<Algorithms />}>
         </Route>
         <Route path="projects" element={<Projects />} >
+            <Route index element={<Navigate to="reddit-client" />} />
             <Route path="reddit-client" element={<RedditClient />} />
             <Route path="bbrl" element={<Mario />} />
             <Route path="viarama" />
