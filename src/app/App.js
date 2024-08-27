@@ -4,7 +4,8 @@ import Home from "../components/Home";
 import Contact from "../components/Contact";
 import Games from "../components/Games";
 import Algorithms from "../components/Algorithms";
-import Projects from "../components/Projects";
+import Projects from "../components/projects/Projects";
+import RedditClient from "../components/projects/RedditClient";
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root />}>
@@ -14,8 +15,11 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
         <Route path="games/:game" element={<Games />} />
         <Route path="algorithms" element={<Algorithms />} />
         <Route path="algorithms/:algorithm" element={<Algorithms />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="projects/:project" element={<Projects />} />
+        <Route path="projects" element={<Projects />} >
+            <Route path="reddit-client" element={<RedditClient />} />
+            <Route path="bbrl" />
+            <Route path="viarama" />
+        </Route>
     </Route>
 ))
 
