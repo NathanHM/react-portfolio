@@ -61,7 +61,7 @@ export default function TicTacToe() {
 
         <h3>Tic-Tac-Toe</h3>
 
-        <div className='content'>
+        <div className='center'>
             <Grid board={board} turn={turn} setBoard={setBoard} setTurn={setTurn} done={done} />
         </div>
 

@@ -1,16 +1,15 @@
 import options from "./options";
+import { NavLink } from "react-router-dom";
 import styles from './Sidebar.module.css';
-import Bar from "./Bar";
-import { v4 as uuidv4 } from "uuid";
 
 export default function Sidebar({ page }) {
 
     return (<>
-
-        <div className={styles.sidebar}>
-            {options[page].map(option => <Bar name={option.name} path={option.path} page={page} key={uuidv4()} />)}
+        <div className={styles.page}>
+            <ul>
+                {options[page].map(option => <li><NavLink to={`/${page}/${option.path}`}>{option.name}</NavLink></li>)}
+            </ul>
         </div>
-
     </>)
 
 }

@@ -28,3 +28,14 @@
     border: none;
     height: 66px;
 }
+
+.page li {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 1rem;
+    margin-bottom: 0;
+}
+
+.page {
+    border-bottom: 1px solid grey;
+}

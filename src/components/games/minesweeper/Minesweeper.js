@@ -56,7 +56,9 @@ export default function Minesweeper() {
 
         {playing ?
             <>
-                <Grid height={height} width={width} field={field} mines={mines} setField={setField} setState={setState} />
+                <div className="center">
+                    <Grid height={height} width={width} field={field} mines={mines} setField={setField} setState={setState} />
+                </div>
 
                 <div className="space-between">
                     <button onClick={reset}>
