@@ -167,11 +167,18 @@ body {
 .space-between {
     display: flex;
     justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 .icon {
     filter: invert(100%);
 }
+
 
 /* Footer */
 

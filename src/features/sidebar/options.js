@@ -5,9 +5,15 @@ const options = {
             path: 'tic-tac-toe'
         },
         {
+            name: 'Minesweeper',
+            path: 'minesweeper'
+        },
+        /*
+        {
             name: 'Chess',
             path: 'chess'
         }
+        */
     ],
     algorithms: [
         {

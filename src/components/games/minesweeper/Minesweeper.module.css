@@ -1,8 +1,8 @@
-.board {
+.field {
   display: block;
 }
 
-.boardRow {
+.fieldRow {
   display: flex;
 }
 
@@ -29,10 +29,4 @@
   padding: 0;
   text-align: center;
   width: 34px;
-}
-
-.boardRow:after {
-  clear: both;
-  content: '';
-  display: table;
 }

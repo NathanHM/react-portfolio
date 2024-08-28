@@ -19,11 +19,13 @@ export default function Header() {
                         Games
                     </NavLink>
                 </li>
+                {/**
                 <li>
                     <NavLink to='algorithms'>
                         Algorithms
                     </NavLink>
                 </li>
+                */}
                 <li>
                     <NavLink to='projects'>
                         Projects

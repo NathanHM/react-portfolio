@@ -14,8 +14,10 @@ export default function Cell({ value, handleClick }) {
     }, [value])
 
     return (
-        <div className={styles.button} onClick={handleClick} disabled={disabled}>
-            {value}
+        <div className={styles.button}>
+            <div className={styles.square} onClick={handleClick} disabled={disabled}>
+                {value}
+            </div>
         </div>
     )
 }
