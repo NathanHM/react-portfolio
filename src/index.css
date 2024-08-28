@@ -17,7 +17,10 @@
 
 /* Text Rules */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Montserrat";
 }
 
@@ -62,7 +65,7 @@ a:active {
     color: white;
 }
 
-.montserrat{
+.montserrat {
     font-family: "Montserrat";
 }
 
@@ -75,7 +78,7 @@ a:active {
     letter-spacing: 1px;
 }
 
-.inconsolata{
+.inconsolata {
     font-family: "Inconsolata";
 }
 
@@ -83,7 +86,7 @@ a:active {
 /* Header */
 
 header {
-    background-color:#383838;
+    background-color: #383838;
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
@@ -141,7 +144,7 @@ body {
     line-height: 5rem;
 }
 
-.content-case{
+.content-case {
     display: flex;
     justify-content: center;
 }
@@ -215,4 +218,114 @@ footer p {
     font-family: "Inconsolata", Arial, serif;
     display: inline;
     margin-bottom: 0px;
+}
+
+/* Mobile Screens */
+
+@media only screen and (max-width: 900px) {
+    
+    h1 {
+        font-size: 4.5rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    
+    header {
+        background-color: #383838;
+        margin: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        border-bottom-left-radius: solid 2px white;
+        box-shadow: 0 0 8px 0px white;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+    
+    header nav {
+        height: 50px;
+        padding: 0px 10px;
+    }
+    
+    ul {
+        width: 100%;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    }
+    
+    /* Content */
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+        transition: 0.1s;
+    }
+    
+    .banner {
+        padding: 45px;
+    }
+    
+    .banner-content {
+        line-height: 5rem;
+    }
+    
+    .content {
+        padding: 5px 10px;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    
+    .container {
+        margin: 0;
+        padding: 15px;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    
+    .space-between {
+        margin: 0.5rem;
+    }
+    
+    /* Footer */
+    
+    footer {
+        position: fixed;
+        box-sizing: border-box;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        margin: 0px;
+        justify-content: space-between;
+        transition: 0.1s;
+    }
+    
+    
+    .footer-year p {
+        padding-left: 0px;
+    }
 }
