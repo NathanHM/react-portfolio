@@ -86,13 +86,13 @@ a:active {
 /* Header */
 
 header {
-    background-color: #383838;
+    background-color: #101010;
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    border-bottom-left-radius: solid 2px white;
-    box-shadow: 0 0 8px 0px white;
+    border-bottom: solid 1px white;
+    /*box-shadow: 0 0 8px 0px white;*/
     display: flex;
     justify-content: space-between;
     font-family: 'Inconsolata';
@@ -122,7 +122,7 @@ ul {
 /* Content */
 
 body {
-    background-color: #262626;
+    background-color: #101010;
     display: block;
     color: white;
     padding: 0px;
@@ -152,17 +152,16 @@ body {
 .content {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
-    margin: 30px 10%;
-    max-width: 1000px;
     display: block;
+    max-width: 1500px;
 }
 
 .container {
     border: 1px solid white;
-    box-shadow: 0 0 8px 0px white;
-    margin: 15px 0px;
+    box-shadow: 0 0 5px 0px white;
+    margin-bottom: 3rem;
     padding: 15px;
-    background-color: #262626;
+    background-color: #101010;
     display: block;
     min-width: 50rem;
 }
@@ -170,6 +169,7 @@ body {
 .space-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0.5rem;
 }
 
@@ -182,11 +182,18 @@ body {
     filter: invert(100%);
 }
 
+button {
+    color: white;
+    background-color: #101010;
+    border: solid 1px white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
 
 /* Footer */
 
 footer {
-    background-color: #383838;
+    background-color: #101010;
     position: fixed;
     box-sizing: border-box;
     bottom: 0;
@@ -194,7 +201,6 @@ footer {
     display: flex;
     padding: 5px;
     border-top: solid 1px white;
-    box-shadow: 0 0 8px 0px white;
     margin: 0px;
     justify-content: space-between;
     transition: 0.1s;
@@ -223,95 +229,97 @@ footer p {
 /* Mobile Screens */
 
 @media only screen and (max-width: 900px) {
-    
+
     h1 {
         font-size: 4.5rem;
         padding: 0px;
         margin: 0px;
     }
-    
+
     h2 {
+        line-height: 1.25rem;
         font-size: 3rem;
         padding: 0px;
         margin: 0px;
     }
-    
+
     h3 {
         font-size: 3rem;
     }
-    
+
     h4 {
         font-size: 2rem;
     }
-    
+
     p {
         font-size: 1rem;
     }
-    
+
     /* Header */
-    
+
     header {
-        background-color: #383838;
         margin: 0px;
         width: 100%;
-        box-sizing: border-box;
         padding: 0;
-        border-bottom-left-radius: solid 2px white;
-        box-shadow: 0 0 8px 0px white;
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
+        height: 40px;
     }
-    
+
     header nav {
-        height: 50px;
+        height: 40px;
         padding: 0px 10px;
     }
-    
+
     ul {
         width: 100%;
-        display: flex;
         font-size: 1rem;
-        align-items: center;
+        margin-block-start: 0em;
+        padding-inline-start: 0px;
     }
-    
+
+    header ul {
+        margin-block-end: 0;
+    }
+
     /* Content */
-    
+
     body {
         padding: 0px;
         margin: 0px;
         transition: 0.1s;
     }
-    
+
     .banner {
-        padding: 45px;
+        padding: 1rem;
+        padding-bottom: 2.5rem;
     }
-    
+
     .banner-content {
         line-height: 5rem;
     }
-    
+
     .content {
-        padding: 5px 10px;
-        margin: 0;
+        padding: 0;
         width: 100%;
-        display: block;
     }
-    
+
     .container {
-        margin: 0;
+        margin-bottom: 4rem;
         padding: 15px;
+        border-left: none;
+        border-right: none;
         max-width: 100%;
         min-width: 0;
-        box-sizing: border-box;
+        box-shadow: none;
     }
-    
+
     .space-between {
         margin: 0.5rem;
     }
-    
+
+
+
     /* Footer */
-    
+
     footer {
         position: fixed;
         box-sizing: border-box;
@@ -323,8 +331,8 @@ footer p {
         justify-content: space-between;
         transition: 0.1s;
     }
-    
-    
+
+
     .footer-year p {
         padding-left: 0px;
     }

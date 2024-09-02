@@ -3,10 +3,9 @@ import { v4 as uuidv4 } from "uuid";
 import styles from './Minesweeper.module.css'
 import Cell from "./Cell";
 
-export default function Grid({ height, width, field, mines, setField, setState }) {
+export default function Grid({ height, width, field, mines, flagCount, setFlagCount, setField, setState }) {
 
     const [grid, setGrid] = useState([]);
-    const [flagCount, setFlagCount] = useState(1);
 
     useEffect(() => {
 
@@ -101,6 +100,10 @@ export default function Grid({ height, width, field, mines, setField, setState }
                     return next;
                 })
             }
+
+            window.removeEventListener(`contextmenu`, (e) => {
+                e.preventDefault();
+            });
         }
 
         const rows = []
@@ -117,7 +120,7 @@ export default function Grid({ height, width, field, mines, setField, setState }
         }
         setGrid(rows)
 
-    }, [field, height, width, setField, setState, mines, flagCount])
+    }, [field, height, width, setField, setState, mines, flagCount, setFlagCount])
 
 
 
