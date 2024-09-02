@@ -49,7 +49,7 @@ export default function Minesweeper() {
                 flagged: ''
             })));
 
-            for (let i = 0; i < mines / 2; i++) {
+            for (let i = 0; i < mines; i++) {
                 setField(prev => {
                     const next = [...prev];
                     let random = Math.floor(Math.random() * height * width)
